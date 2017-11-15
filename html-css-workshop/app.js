@@ -11,7 +11,10 @@ app.get('/', function(req, res) {
 	res.sendFile(path.join(__dirname + '/example.html'));
 });
 
-// TODO: Write a post handler for our form 
-
+// Log out the form data and redirect 
+app.post('/', function(req,res){
+	console.log(req.body.firstName);
+	res.redirect('/');
+});
 console.log("Listening on port 8080");
 app.listen(8080);
