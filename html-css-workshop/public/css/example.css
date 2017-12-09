@@ -1,0 +1,32 @@
+/*
+selector {
+  property : value;
+  property : value;
+}
+selector: What HTML element do I want to change?
+property: What aspect of that HTML element do I want to change?
+value: What new value do I want to set that property to?
+*/
+
+/* Make all h1 headers have blue text and 12px font size*/
+h1 {
+  color:blue;
+  font-size:12px;
+}
+/* Center ALL of the visible text on the page*/
+body { /* <-- The <body> tag wraps all visible text on HTML pages */
+  text-align: center;
+}
+
+/* All paragraphs should have a green background*/
+p {
+  background-color: green;
+}
+/* When you hover over a link, the background should turn yellow */
+a:hover{
+  background-color: yellow;
+}
+/* If you've clicked the link, the link's text color should be red*/
+a:visited{
+  color: red;
+}
