@@ -1,0 +1,49 @@
+/*
+Inline elements:
+
+respect left & right margins and padding, but not top & bottom
+cannot have a width and height set
+allow other elements to sit to their left and right.
+see very important side notes on this here.
+Block elements:
+
+respect all of those
+force a line break after the block element
+Inline-block elements:
+
+allow other elements to sit to their left and right
+respect top & bottom margins and padding
+respect height and width
+
+==========================================
+
+IDs override classes
+Classes override tags
+order in which you define ids/classes/tags matter!
+
+If we have a div element with 2 Classes
+<div class='class1 class2'></div>
+.class1 {
+  color: red;
+}
+
+.class2 { <-- this overrites class1's red color attribute (text is now blue).
+  color: blue;
+}
+*/
+
+#container1 {
+  width: 30px;
+  height: 10px;
+  background-color: yellow;
+  display: inline-block;
+  float: left;
+}
+#container2 {
+  width: 30px;
+  height: 10px;
+  background-color: gray;
+  display: inline-block;
+  float: right;
+  margin-right: 100px;
+}
